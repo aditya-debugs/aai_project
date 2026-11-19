@@ -1,0 +1,60 @@
+{
+  "source": "Reserve Bank of India Household Finance Survey & National FinTech Benchmark Index",
+  "survey_year": "2024",
+  "sample_size": 25000,
+  "household_spending_distribution_by_income_tier": {
+    "tier_entry_level_under_50k_monthly": {
+      "income_bracket": "< ₹50,000 / month",
+      "needs_percent": 62.0,
+      "wants_percent": 24.5,
+      "savings_percent": 13.5,
+      "top_categories": [
+        { "category": "Rent & Housing", "share_percent": 28.0 },
+        { "category": "Food & Groceries", "share_percent": 22.0 },
+        { "category": "Utilities & Bills", "share_percent": 12.0 },
+        { "category": "Transport", "share_percent": 10.0 }
+      ],
+      "median_emergency_cushion_months": 1.8
+    },
+    "tier_middle_class_50k_to_150k_monthly": {
+      "income_bracket": "₹50,000 - ₹1,50,000 / month",
+      "needs_percent": 48.0,
+      "wants_percent": 31.0,
+      "savings_percent": 21.0,
+      "top_categories": [
+        { "category": "Food & Dining Out", "share_percent": 16.5 },
+        { "category": "Rent & EMI", "share_percent": 24.0 },
+        { "category": "Shopping & Lifestyle", "share_percent": 14.0 },
+        { "category": "Subscriptions & Entertainment", "share_percent": 5.5 }
+      ],
+      "median_emergency_cushion_months": 4.2
+    },
+    "tier_affluent_above_150k_monthly": {
+      "income_bracket": "> ₹1,50,000 / month",
+      "needs_percent": 36.0,
+      "wants_percent": 32.0,
+      "savings_percent": 32.0,
+      "top_categories": [
+        { "category": "Investments & Mutual Funds", "share_percent": 32.0 },
+        { "category": "Dining & Leisure", "share_percent": 15.0 },
+        { "category": "Travel & Auto", "share_percent": 12.0 },
+        { "category": "Housing & Utilities", "share_percent": 18.0 }
+      ],
+      "median_emergency_cushion_months": 7.5
+    }
+  },
+  "health_risk_thresholds": {
+    "max_sustainable_debt_to_income": 0.35,
+    "warning_debt_to_income": 0.45,
+    "critical_debt_to_income": 0.55,
+    "recommended_emergency_months_salaried": 6.0,
+    "recommended_emergency_months_freelancer": 9.0,
+    "ideal_savings_rate_minimum": 0.20,
+    "ideal_savings_rate_target": 0.30
+  },
+  "category_spike_thresholds": {
+    "food_dining_spike_ratio": 1.35,
+    "shopping_spike_ratio": 1.50,
+    "travel_spike_ratio": 1.60
+  }
+}

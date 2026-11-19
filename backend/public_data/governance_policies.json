@@ -1,0 +1,38 @@
+{
+  "governance_standard": "FinPilot Autonomous AI Agent Governance & EMG Sentinel Specification",
+  "version": "2.4.0",
+  "applicable_regulations": ["ISO/IEC 42001 (AI Management System)", "RBI Master Direction on IT Governance in BFSI", "EU AI Act High-Risk Financial Systems"],
+  "principles": [
+    {
+      "code": "EMG-01",
+      "name": "Event Monitoring & Governance (EMG) Audit Trail",
+      "severity_levels": ["INFO", "WARNING", "CRITICAL", "EMERGENCY"],
+      "requirement": "Every agent execution, financial state transformation, tool invocation, and decision path must generate an immutable structured audit event. The event must contain a tamper-evident SHA-256 parameter signature hash.",
+      "enforcement": "Non-bypassable event stream recorded in memory and persistent jsonl."
+    },
+    {
+      "code": "EMG-02",
+      "name": "Automated Circuit Breaker & Emergency Killswitch",
+      "requirement": "The governance sentinel must automatically trip into HALT state if: (a) > 3 critical financial anomalies are detected in a single run, (b) prompt injection or adversarial jailbreak attempt is detected, (c) unauthorized file path or rogue tool call is attempted, or (d) manual administrator killswitch is engaged.",
+      "enforcement": "Immediate quarantine of pipeline execution and tool dispatch."
+    },
+    {
+      "code": "EMG-03",
+      "name": "Cryptographic Parameter Lineage & Attestation",
+      "requirement": "All parameter values passed between the user input, ingestion agent, categorizer, tool calls, RAG engines, and advice generator must be logged with source, destination, mutation reason, and validation status.",
+      "enforcement": "Parameter flow matrix must be inspectable in real-time."
+    },
+    {
+      "code": "EMG-04",
+      "name": "Financial PII & Confidentiality Containment",
+      "requirement": "Zero raw PII (Bank account numbers, Aadhaar, PAN cards, CVVs, credit card numbers, personal phone numbers) may reach external LLMs or unauthenticated APIs. All identifiers must undergo deterministic tokenization or masking before downstream transmission.",
+      "enforcement": "Pre-flight Regex scrubbing harness with zero-leak guarantee."
+    },
+    {
+      "code": "EMG-05",
+      "name": "Deterministic Grounding & Anti-Hallucination Guardrails",
+      "requirement": "Financial recommendations must derive numerical figures exclusively from deterministic pipeline computations. LLMs are restricted strictly to narrative phrasing of verified numbers.",
+      "enforcement": "Post-flight advice reviewer rejects unverified savings claims or negative saving recommendations."
+    }
+  ]
+}

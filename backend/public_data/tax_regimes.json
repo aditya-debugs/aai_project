@@ -1,0 +1,46 @@
+{
+  "financial_year": "2024-2025 / 2025-2026",
+  "assessment_year": "2025-2026",
+  "overview": "Comparison of Indian Income Tax regimes (Section 115BAC New Tax Regime vs Old Tax Regime) for financial planning and advisory algorithms.",
+  "new_regime_slabs": [
+    { "range": "₹0 - ₹3,00,000", "rate_percent": 0 },
+    { "range": "₹3,00,001 - ₹7,00,000", "rate_percent": 5 },
+    { "range": "₹7,00,001 - ₹10,00,000", "rate_percent": 10 },
+    { "range": "₹10,00,001 - ₹12,00,000", "rate_percent": 15 },
+    { "range": "₹12,00,001 - ₹15,00,000", "rate_percent": 20 },
+    { "range": "Above ₹15,00,000", "rate_percent": 30 }
+  ],
+  "old_regime_slabs": [
+    { "range": "₹0 - ₹2,50,000", "rate_percent": 0 },
+    { "range": "₹2,50,001 - ₹5,00,000", "rate_percent": 5 },
+    { "range": "₹5,00,001 - ₹10,00,000", "rate_percent": 20 },
+    { "range": "Above ₹10,00,000", "rate_percent": 30 }
+  ],
+  "key_exemptions_and_rebates": {
+    "standard_deduction_salaried": {
+      "new_regime": "₹75,000 (enhanced in Union Budget 2024)",
+      "old_regime": "₹50,000"
+    },
+    "section_87a_rebate": {
+      "new_regime": "Zero tax on taxable income up to ₹7,00,000 (effective zero tax up to ₹7,75,000 with standard deduction)",
+      "old_regime": "Zero tax on taxable income up to ₹5,00,000"
+    },
+    "section_80c_limit": {
+      "new_regime": "Not available",
+      "old_regime": "Max ₹1,50,000 (EPF, PPF, ELSS, Life Insurance, Home Loan Principal)"
+    },
+    "section_80d_health_insurance": {
+      "new_regime": "Not available",
+      "old_regime": "₹25,000 (Self & Family) + ₹50,000 (Senior Citizen Parents)"
+    },
+    "section_24b_home_loan_interest": {
+      "new_regime": "Not available for self-occupied property",
+      "old_regime": "Up to ₹2,00,000 for self-occupied home"
+    },
+    "section_80ccd_1b_nps": {
+      "new_regime": "Employer contribution u/s 80CCD(2) up to 14% allowed",
+      "old_regime": "Additional ₹50,000 deduction for voluntary NPS"
+    }
+  },
+  "decision_rule_for_advisor_agent": "If total itemized deductions (80C + 80D + HRA + 24b) exceed ₹3,75,000 for an individual earning above ₹15,00,000, the Old Regime is typically mathematically superior; otherwise, the New Regime provides lower tax liability with zero compliance friction."
+}

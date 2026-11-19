@@ -1,0 +1,60 @@
+[
+  {
+    "circular_id": "RBI/2017-18/15",
+    "title": "Customer Protection – Limiting Liability in Unauthorized Electronic Banking Transactions",
+    "authority": "Reserve Bank of India (RBI)",
+    "category": "Consumer Protection & Fraud Liability",
+    "date": "July 6, 2017",
+    "summary": "Mandates zero customer liability when unauthorized transaction occurs due to contributory fraud/negligence/deficiency on the part of the bank, or third-party breach reported within 3 working days.",
+    "key_clauses": [
+      "Zero Liability: Customer notifies the bank within 3 working days of receiving communication from the bank regarding unauthorized transaction.",
+      "Limited Liability: Customer notifies between 4 to 7 working days; maximum liability capped at ₹5,000 for basic savings/credit cards with limit ≤ ₹5 lakh, and ₹10,000 for other accounts.",
+      "Beyond 7 working days: Customer liability is determined as per the board-approved policy of the bank.",
+      "Burden of Proof: The burden of proving customer liability in unauthorized electronic banking transactions lies entirely upon the bank.",
+      "Reversal Timeline: Bank must credit the shadow reversal value to customer account within 10 working days of notification."
+    ],
+    "applicable_channels": ["UPI", "IMPS", "NEFT", "Credit Card", "Debit Card", "Net Banking"]
+  },
+  {
+    "circular_id": "RBI/2021-22/86",
+    "title": "Framework for Tokenisation and Card-on-File Storage",
+    "authority": "Reserve Bank of India (RBI)",
+    "category": "Payment Security & PII Protection",
+    "date": "September 7, 2021",
+    "summary": "Prohibits merchants and payment aggregators from storing actual card numbers (PAN), expiry dates, or CVV; requires device-specific or merchant-specific tokenization.",
+    "key_clauses": [
+      "No entity in the card transaction flow other than card issuers and card networks shall store actual card data (CoF).",
+      "Explicit customer consent with Additional Factor of Authentication (AFA) required for token registration.",
+      "Tokens must be cryptographically bound to specific merchant and consumer device to prevent cross-site fraud."
+    ],
+    "applicable_channels": ["Card Payments", "E-commerce", "Recurring Auto-Debit"]
+  },
+  {
+    "circular_id": "NPCI/UPI/2023-24/112",
+    "title": "NPCI Guidelines on UPI Daily Limits and P2M Interchange",
+    "authority": "National Payments Corporation of India (NPCI)",
+    "category": "Transaction Limits & Routing",
+    "date": "August 2023",
+    "summary": "Standardizes standard daily limit for standard UPI peer-to-peer (P2P) transfers to ₹1,00,000 per day, with elevated limits of ₹5,00,000 for capital markets, insurance, and medical/educational institutions.",
+    "key_clauses": [
+      "Standard UPI P2P daily transaction cap: ₹1,00,000 across all UPI applications.",
+      "Higher educational institutions and healthcare emergency payments cap: ₹5,00,000 per transaction.",
+      "Mandatory 4-digit or 6-digit MPIN for every outgoing debit authorization; no pre-authorized debits without e-mandate registration."
+    ],
+    "applicable_channels": ["UPI", "BHIM", "Third-Party App Providers (TPAPs)"]
+  },
+  {
+    "circular_id": "RBI/2023-24/104",
+    "title": "Fair Lending Practice – Penal Charges in Loan Accounts and Transparent Recovery",
+    "authority": "Reserve Bank of India (RBI)",
+    "category": "Debt & EMI Governance",
+    "date": "August 18, 2023",
+    "summary": "Regulates penal interest charges on loan default: penalty must be levied strictly as 'penal charges' and not compounded as 'penal interest' added to principal.",
+    "key_clauses": [
+      "Penalty for non-compliance of loan terms must be treated as reasonable penal charges, not additional rate of interest.",
+      "No capitalization of penal charges (no interest computed on penal charges).",
+      "Lenders must provide clear disclosure of quantum and reason for penal charges in the loan agreement and key facts statement."
+    ],
+    "applicable_channels": ["Personal Loans", "Home Loans", "Auto Loans", "Credit Card Outstanding"]
+  }
+]
